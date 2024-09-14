@@ -1,0 +1,204 @@
+.datatable-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    
+    
+}
+
+.table-header {
+    background-color: #323044; 
+    color: white; 
+    padding: 20px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+
+.header-content {
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+.custom-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.overlay-content {
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #f5f5f5); 
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(88, 88, 88, 0.15); 
+    max-width: 300px; 
+    width: 100%; 
+    transition: all 0.3s ease; 
+}
+
+.overlay-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.25rem; 
+    font-weight: bold;
+    color: #333;
+}
+
+.overlay-content input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 20px); 
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.overlay-content button {
+    background-color: #ff5e00; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; 
+}
+
+.overlay-content button:hover {
+    background-color:#f5783e;
+}
+
+.p-overlaypanel .p-overlaypanel-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.custom-datatable {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.p-datatable .p-datatable-header {
+    background-color: #007bff; 
+    color: white;
+}
+
+.p-datatable .p-datatable-header th {
+    font-weight: bold;
+}
+
+.p-datatable .p-datatable-tbody > tr {
+    background-color: #fff; 
+}
+
+.p-datatable .p-datatable-tbody tr:hover {
+    background-color: #e5ceeb;
+}
+
+.p-datatable .p-datatable-tbody .p-highlight {
+    background-color: #bd90db; 
+    color: white; 
+}
+
+.p-datatable .p-datatable-tbody td {
+    padding: 10px;
+}
+
+.p-datatable .p-datatable-thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+.artist-column {
+    font-style: italic;
+}
+
+.inscriptions-column {
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: clip; 
+}
+
+.p-datatable .p-datatable-footer {
+    background-color: #007bff; 
+    color: white;
+    border-radius: 0 0 8px 8px; 
+}
+
+.p-datatable .p-datatable-tbody img {
+    width: 100px; 
+    height: 75px; 
+    object-fit: cover; 
+    border-radius: 4px; 
+}
+
+.image-overlay img {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.image-overlay {
+    padding: 2px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .datatable-container {
+        padding: 10px; 
+    }
+
+    .table-header {
+        padding: 10px; 
+        font-size: 1.25rem; 
+    }
+
+    .custom-header {
+        display: none; 
+    }
+
+    .p-datatable {
+        font-size: 0.9rem; 
+    }
+
+    .p-datatable .p-datatable-thead th {
+        padding: 8px; 
+    }
+
+    .p-datatable .p-datatable-tbody td {
+        padding: 8px;
+    }
+
+    .p-datatable .p-datatable-tbody img {
+        width: 80px;
+        height: 60px; 
+    }
+
+    
+    .overlay-content {
+        max-width: 100%; 
+        width: 100%;
+    }
+
+    .image-overlay img {
+        max-width: 100%; 
+        height: auto; 
+    }
+}
+
+
+
+
+
